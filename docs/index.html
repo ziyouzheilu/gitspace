@@ -171,14 +171,23 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In this work, we explore how to leverage the success of implicit novel view synthesis methods for surface reconstruction.
-            Methods which learn a neural radiance field have shown amazing image synthesis results, but the underlying geometry representation is only a coarse approximation of the real geometry.
-            We demonstrate how depth measurements can be incorporated into the radiance field formulation to produce more detailed and complete reconstruction results than using methods based on either color or depth data alone.
-            In contrast to a density field as the underlying geometry representation, we propose to learn a deep neural network which stores a truncated signed distance field.
-            Using this representation, we show that one can still leverage differentiable volume rendering to estimate color values of the observed images during training to compute a reconstruction loss.
-            This is beneficial for learning the signed distance field in regions with missing depth measurements.
-            Furthermore, we correct for misalignment errors of the camera, improving the overall reconstruction quality.
-            In several experiments, we show-cast our method and compare to existing works on classical RGB-D fusion and learned representations.
+           During industrial processing, unforeseen defects may
+           arise in products due to uncontrollable factors. Although
+           unsupervised methods have been successful in defect local-
+           ization, the usual use of pre-trained models results in low-
+           resolution outputs, which damages visual performance. To
+           address this issue, we propose PyramidFlow, the first fully
+           normalizing flow method without pre-trained models that
+           enables high-resolution defect localization. Specifically,
+           we propose a latent template-based defect contrastive lo-
+           calization paradigm to reduce intra-class variance, as the
+           pre-trained models do. In addition, PyramidFlow utilizes
+           pyramid-like normalizing flows for multi-scale fusing and
+           volume normalization to help generalization. Our com-
+           prehensive studies on MVTecAD demonstrate the proposed
+           method outperforms the comparable algorithms that do not
+           use external priors, even achieving state-of-the-art perfor-
+           mance in more challenging BTAD scenarios.
           </p>
         </div>
       </div>
