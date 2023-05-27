@@ -171,23 +171,18 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h3 class="title is-2">Results</h3>
+        <h3 class="title is-2">Visualize Results</h3>
         <div class="content has-text-justified">
           <p>
-            We test our method on the <a href="http://www.scan-net.org/">ScanNet</a> dataset which provides RGB-D sequences of room-scale scenes.
-            We compare our method to the original ScanNet <a href="http://graphics.stanford.edu/projects/bundlefusion/">BundleFusion</a> reconstructions which often suffer from severe camera pose misalignment.
-            Our approach jointly optimizes for the scene representation network as well as the camera poses, leading to substantially reduced misalignment artifacts in the reconstructed geometry.
+           Visualization of our results on MVTecAD and BTAD. From top to bottom are original images, estimated image templates, our localization 
+           results, and ground truths. (a) The six challenging results on MVTecAD. (b) Two representative results on BTAD. (c) Results for the 
+           four unregistered categories on MVTecAD. (d) Results for complex scenarios.
           </p>
         </div>
         <div class="columns is-centered">
           <div class="column is-three-quarters">
             <div class="content juxtapose">
-              <img src="static/images/scene0002_bf.png" data-label="BundleFusion [Dai et al. 2017]" />
-              <img src="static/images/scene0002_ours.png" data-label="Ours" />
-            </div>
-            <div class="content juxtapose">
-              <img src="static/images/scene0050_bf.png" data-label="BundleFusion [Dai et al. 2017]" />
-              <img src="static/images/scene0050_ours.png" data-label="Ours" />
+              <img src="static/images/results.png" data-label="Visualize Results" />
             </div>
             <script src="./static/js/juxtapose.min.js"></script>
           </div>
